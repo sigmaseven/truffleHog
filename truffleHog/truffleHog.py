@@ -83,10 +83,7 @@ def main():
     project_path = output["project_path"]
     if args.cleanup:
         clean_up(output)
-    if output["foundIssues"]:
-        sys.exit(1)
-    else:
-        sys.exit(0)
+    sys.exit(0)
 
 def str2bool(v):
     if v == None:
